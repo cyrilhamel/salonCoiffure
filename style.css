@@ -1,0 +1,33 @@
+body{
+    background-color: #1C2230;
+    height: 100vh;
+}
+
+.section{
+ height: 100%;
+    background-attachment: fixed;
+    background-image:url("images/imgAccueil.jpg");
+    background-size: cover;
+    
+
+}
+.section :nth-child(1){
+    height: 200px;
+background-color: rgba(255, 255, 255, 0.2);
+}
+header{
+    background-color: #1C2230;
+    width: 300px;
+    height: auto;
+}
+
+nav{
+    width: 300px;
+    background-color: #1C2230;
+}
+
+input{
+    color: #C09256;
+    background-color: #1C2230;
+    border: none;
+}
