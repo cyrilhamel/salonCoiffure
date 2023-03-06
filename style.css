@@ -262,4 +262,10 @@ footer input {
     color: white;
 }
 
+.svg {  
+    background: url(images/Group\ 2.svg);
+    background-repeat: no-repeat;
+    background-size: 100px;
+}
+
 
