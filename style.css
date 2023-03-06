@@ -64,13 +64,37 @@ footer {
 
 
 /* galerie */
-
+.gallery {
+    background-color: rgb(207, 207, 207);
+}
+.gallery-cover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 120px;
+}
+.gallery-cover h1{
+    position: absolute;
+    font-size: 100px;
+    font-family: biker2;
+    color: white;
+    bottom: 0;
+    transform: translateY(25%);
+    left: 10%;
+}
+.gallery-cover img{
+    width: 100%;
+    height: auto;
+}
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
     width: 80vw;
     margin-inline: auto;
-    margin-top: 120px;
 }
 .gallery-container:hover > .column img:not(:hover){
     opacity: .5;   
@@ -98,6 +122,10 @@ footer {
     flex: calc(50% - 10px);
     max-width: 50%;
     }
+    .gallery-cover h1{
+        left: 5%;
+    }
+    
 }
 
 @media screen and (max-width: 600px) {
@@ -108,6 +136,16 @@ footer {
     .column {
     flex: 100%;
     max-width: 100%;
+    }
+    .gallery-cover{
+      height: 200px;
+    }
+    .gallery-cover img{
+        width: 100%;
+        height: auto;
+    }
+    .gallery-cover h1{
+        left: 0;
     }
 
 }
