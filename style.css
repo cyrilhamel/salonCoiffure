@@ -11,18 +11,22 @@ font-family: 'biker2';
 }
 body{
     background-color: #1C2230;
-    height: 100vh;
+   height: 100vh;
 }
 
 .section{
- height: 40%;
+  font-family: "biker2",sans-serif;
+  font-size: 1rem;
+  color: #1C2230;
+ height: 31%;
     background-attachment: fixed;
     background-image:url("images/imgAccueil.jpg");
-    background-size: contain;
+    background-size: 100%;
+    
 }
 .section :nth-child(1){
-    height: 200px;
-background-color: rgba(255, 255, 255, 0.2);
+    height: 250px;
+background-color: rgba(255, 255, 255, 0.5);
 }
 header{
     background-color: #1C2230;
@@ -49,6 +53,17 @@ nav input{
     font-size: 2.5rem;
     padding-top: 30px;
 }
+.coordonnee{
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.slogan{
+  padding-top: 5rem;
+  text-align: center;
+  font-size: 3rem;
+}
 
 footer {
   height: 50px;
@@ -67,17 +82,31 @@ footer {
 .gallery {
     background-color: rgb(207, 207, 207);
 }
-.gallery-cover{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.cover.gallery{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cover.tarifs{
+  filter: grayscale(.9);
+}
+.cover{
     width: 100%;
     position: relative;
     height: 400px;
     overflow: hidden;
     margin-top: 120px;
 }
-.gallery-cover h1{
+.cover .gradient{
+  width: 100%;
+  height: 100%;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(56,56,133,0) 50%, rgba(0,0,0,1) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.cover h1{
     position: absolute;
     font-size: 100px;
     font-family: biker2;
@@ -85,8 +114,9 @@ footer {
     bottom: 0;
     transform: translateY(25%);
     left: 10%;
+    z-index: 10;
 }
-.gallery-cover img{
+.cover img{
     width: 100%;
     height: auto;
 }
@@ -122,7 +152,7 @@ footer {
     flex: calc(50% - 10px);
     max-width: 50%;
     }
-    .gallery-cover h1{
+    .cover h1{
         left: 5%;
     }
     
@@ -137,14 +167,14 @@ footer {
     flex: 100%;
     max-width: 100%;
     }
-    .gallery-cover{
+    .cover{
       height: 200px;
     }
-    .gallery-cover img{
+    .cover img{
         width: 100%;
         height: auto;
     }
-    .gallery-cover h1{
+    .cover h1{
         left: 0;
     }
 
@@ -261,10 +291,9 @@ footer {
 
   .tarifs-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 100vw;
-    margin-top: 120px;
+    width: 100%;
   }
 
   .tarifs-container > div{
