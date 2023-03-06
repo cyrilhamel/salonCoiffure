@@ -18,10 +18,10 @@ body{
   font-family: "biker2",sans-serif;
   font-size: 1rem;
   color: #1C2230;
- height: 31%;
+ height: 70%;
     background-attachment: fixed;
     background-image:url("images/imgAccueil.jpg");
-    background-size: 100%;
+    background-size: cover;
     
 }
 .section :nth-child(1){
@@ -158,6 +158,24 @@ footer {
     
 }
 
+@media screen and (max-width: 800px) {
+nav input{
+  font-size: 1.5rem;
+}
+.coordonnee{
+  padding-top: 2rem;
+ 
+  font-size: 2.5rem;
+}
+
+.slogan{
+  padding-top: 6rem;
+  
+  font-size: 2.5rem;
+}
+
+}
+
 @media screen and (max-width: 600px) {
     .gallery-container {
         width: 95vw;
@@ -178,6 +196,17 @@ footer {
         left: 0;
     }
 
+    .coordonnee{
+      padding-top: 2rem;
+     
+      font-size: 1.5rem;
+    }
+    
+    .slogan{
+      padding-top: 6rem;
+      
+      font-size: 1.5rem;
+    }
 }
 
 
