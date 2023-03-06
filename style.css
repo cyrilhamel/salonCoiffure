@@ -1,3 +1,9 @@
+@font-face{
+font-family: 'biker2';
+	src: url('font/Gothic\ rough.otf') format('truetype'),
+    url('font/Gothic.woff2') format('woff2');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -34,7 +40,8 @@ nav{
     justify-content: space-around;
 }
 
-nav input, footer input{
+input{
+    font-family: "biker2",sans-serif;
     color: #C09256;
     background-color: #1C2230;
     border: none;
