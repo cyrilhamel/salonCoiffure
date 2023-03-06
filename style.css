@@ -12,9 +12,7 @@ body{
  height: 100%;
     background-attachment: fixed;
     background-image:url("images/imgAccueil.jpg");
-    background-size: cover;
-    
-
+    background-size: contain;
 }
 .section :nth-child(1){
     height: 200px;
@@ -41,7 +39,7 @@ input{
 
 
 
-/* tornike */
+/* galerie */
 
 .gallery-container {
     display: flex;
@@ -194,3 +192,64 @@ input{
       transform: rotate(360deg);
     }
   }
+
+
+  /* prestTarifs */
+
+  .tarifs-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+
+  .tarifs-container > div{
+    width: 400px;
+    height: 500px;
+    background-color: grey;
+    margin: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+  .tarifs-container div img {
+    width: 100%;
+    opacity: .8;
+  }
+
+  .prix {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+    transform: translate(-50%,-50%);
+    }
+    .prix h1{
+        font-size: 70px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .prix > h1 {
+        -webkit-text-stroke: 3px #C09256;
+        color: white;
+        margin-top: 20px;
+    }
+    
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(191, 145, 85);
+    opacity: .8;
+    color: white;
+}
+
+
