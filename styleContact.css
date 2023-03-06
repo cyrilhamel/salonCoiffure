@@ -1,4 +1,5 @@
 body {
+    height: 100%;
     background: rgb(28,34,48);
     background: radial-gradient(circle, rgba(28,34,48,0.5007002801120448) 0%, rgba(192,146,86,1) 100%);
 }
@@ -7,12 +8,16 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
     background-color: #fff;
     border-radius: 50px;
     color: #1C2230;
     margin-top: 160px;
+    margin-bottom: 40px;
     margin-inline: 10%;
-    height: 80vh;
+    height: 80%;
+    overflow: hidden;
+    position: relative;
 }
 
 form {
@@ -22,7 +27,9 @@ form {
 }
 
 #formulaire {
-    width: 40%;
+    /* width: 40%; */
+    flex: 60%;
+    padding: 0 10%;
 }
 
 form input, form textarea {
@@ -59,13 +66,36 @@ span {
     border-radius: 7px;
 }
 
+#map .bgBlue {
+    background-color: #1C2230;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 50%;
+}
+#map iframe{
+    z-index: 2;
+}
+#map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: auto;
+    z-index: 2;
+    height: 100%;
+    padding: 5% 0;
+}
+
 @media screen and (max-width: 600px) {
-    .contact {
-        flex-direction: column;
-    }
 
     #formulaire {
-        width: 90%;
+        flex: 100%;
+    }
+    #map {
+        flex: 100%;
     }
 
     .coordonnees {
