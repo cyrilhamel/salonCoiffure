@@ -385,3 +385,28 @@ nav input{
     background-repeat: no-repeat;
     background-size: 200px;
 }
+ion-icon {
+  font-family: 64px;
+  color: white;
+}
+
+/* navbar */
+@media screen and (max-width: 600px) {
+  header span{
+    position: absolute;
+    right: 0;
+    font-size: 100px;
+    color: white;
+  }
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 120px;
+    display: none;
+  }
+  .navbar.active {
+    display: flex;
+  }
+}
