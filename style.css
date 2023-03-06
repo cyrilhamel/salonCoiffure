@@ -11,18 +11,22 @@ font-family: 'biker2';
 }
 body{
     background-color: #1C2230;
-    height: 100vh;
+   height: 100vh;
 }
 
 .section{
- height: 40%;
+  font-family: "biker2",sans-serif;
+  font-size: 1rem;
+  color: #1C2230;
+ height: 31%;
     background-attachment: fixed;
     background-image:url("images/imgAccueil.jpg");
-    background-size: contain;
+    background-size: 100%;
+    
 }
 .section :nth-child(1){
-    height: 200px;
-background-color: rgba(255, 255, 255, 0.2);
+    height: 250px;
+background-color: rgba(255, 255, 255, 0.5);
 }
 header{
     background-color: #1C2230;
@@ -48,6 +52,17 @@ nav input{
     border: none;
     font-size: 2.5rem;
     padding-top: 30px;
+}
+.coordonnee{
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.slogan{
+  padding-top: 5rem;
+  text-align: center;
+  font-size: 3rem;
 }
 
 footer {
