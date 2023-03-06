@@ -1,3 +1,8 @@
+body {
+    background: rgb(28,34,48);
+    background: radial-gradient(circle, rgba(28,34,48,0.5007002801120448) 0%, rgba(192,146,86,1) 100%);
+}
+
 .contact {
     display: flex;
     justify-content: space-evenly;
@@ -5,9 +10,8 @@
     background-color: #fff;
     border-radius: 50px;
     color: #1C2230;
-    margin: 5% 10%;
+    margin: 2% 10%;
     height: 80vh;
-    z-index: 1;
 }
 
 form {
@@ -22,6 +26,7 @@ form {
 
 form input, form textarea {
     background-color: #fff;
+    border: none;
     border-bottom: 1px solid #C09256;
 }
 
@@ -36,6 +41,7 @@ span {
 .coordonnees {
     display: flex;
     justify-content: space-between;
+    gap: 15px;
 }
 
 .coord h3 {
@@ -50,19 +56,6 @@ span {
     background-color: #C09256;
     border: none;
     border-radius: 7px;
-}
-
-.map {
-    z-index: 3;
-}
-
-.bgBlue {
-    background-color: #1C2230;
-    z-index: 2;
-    height: 100%;
-    width: 20%;
-    border-radius: 0 50px 50px 0;
-    justify-self: flex-end;
 }
 
 @media screen and (max-width: 600px) {

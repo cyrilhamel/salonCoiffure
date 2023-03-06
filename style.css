@@ -23,16 +23,18 @@ header{
     /* width: 300px; */
     width: 100%;
     height: 120px;
+    position: fixed;
+    top: 0;
 }
 
 nav{
-    width: 50%;
+    width: 60%;
     background-color: #1C2230;
     display: flex;
     justify-content: space-around;
 }
 
-input{
+nav input, footer input{
     color: #C09256;
     background-color: #1C2230;
     border: none;
@@ -41,11 +43,15 @@ input{
 }
 
 footer {
-  height: 120px;
+  height: 50px;
+  background-color: #1C2230;
 }
 
-footer input {
-  padding-left: 5%;
+#foot {
+  text-align: center;
+  color: #C09256;
+  padding-top: 10px;
+  font-size: 1.2rem;
 }
 
 
