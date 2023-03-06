@@ -65,14 +65,8 @@ input{
     width: 100%;
 }
 
-@media screen and (max-width: 1200px) {
-    .column {
-        flex: calc(33% - 10px);
-        max-width: 33%;
-    }
-}
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
     .gallery-container {
         width: 90vw;
         margin-inline: auto;
