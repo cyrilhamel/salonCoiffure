@@ -1,0 +1,73 @@
+body {
+    background: rgb(28,34,48);
+    background: radial-gradient(circle, rgba(28,34,48,0.5007002801120448) 0%, rgba(192,146,86,1) 100%);
+}
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50px;
+    color: #1C2230;
+    margin: 2% 10%;
+    height: 80vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10%;
+}
+
+#formulaire {
+    width: 40%;
+}
+
+form input, form textarea {
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid #C09256;
+}
+
+form textarea {
+    border: none;
+}
+
+span {
+    color: #C09256;
+}
+
+.coordonnees {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.coord h3 {
+    font-size: 1rem;
+}
+
+.coord a {
+    text-decoration-color: #C09256;
+}
+
+#envoyer {
+    background-color: #C09256;
+    border: none;
+    border-radius: 7px;
+}
+
+@media screen and (max-width: 600px) {
+    .contact {
+        flex-direction: column;
+    }
+
+    #formulaire {
+        width: 90%;
+    }
+
+    .coordonnees {
+        flex-direction: column;
+    }
+}

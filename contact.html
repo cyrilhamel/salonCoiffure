@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleContact.css">
+    <title>Contact Coiff'Homme</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="button" value="Accueil" onclick="maRedirection('index.html')">
+            <input type="button" value="Prestations et Tarifs" onclick="maRedirection('prestTarifs.html')">
+            <input type="button" value="Galerie" onclick="maRedirection('galerie.html')">
+            <input type="button" value="Contact" onclick="maRedirection('contact.html')">
+        </nav>
+    </header>
+
+    <div class="contact">
+        <div id="formulaire">
+            <h2>Nous <span>contacter</span></h2>
+            <p>N'hésitez pas à nous laisser un message pour toute demande de renseignements ou pour réserver une coupe avec nous.</p>
+            <form action="traitement.php" method="post">
+                <input type="text" name="nom" placeholder="Nom" required>
+                <input type="tel" name="tel" placeholder="Téléphone">
+                <input type="email" name="email" placeholder="E-mail" required>
+                <textarea name="message" cols="20" rows="5" placeholder="Votre message" required></textarea>
+                <button type="submit" id="envoyer">Envoyer</button>
+            </form>
+
+            <div class="coordonnees">
+                <div class="coord">
+                    <h3>Téléphone</h3>
+                    <span>05.08.96.54.71</span>
+                </div>
+                <div class="coord">
+                    <h3>Adresse e-mail</h3>
+                    <a href="mailto:contact.coiffhomme@gmail.com"><span>contact.coiffhomme@gmail.com</span></a>
+                </div>
+                <div class="coord">
+                    <h3>Facebook</h3>
+                    <a href="https://www.facebook.com/people/CoiffHomme/100090440545708/"><span>Coiff'Homme</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.94956978934!2d0.08178209729340538!3d43.23151697259426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a9d38ce10c257d%3A0x139d0b22034a5211!2s9%20Rue%20Fran%C3%A7ois%20Mousis%2C%2065000%20Tarbes!5e0!3m2!1sfr!2sfr!4v1678091402859!5m2!1sfr!2sfr" width="300" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <footer></footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
