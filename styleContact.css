@@ -10,7 +10,8 @@ body {
     background-color: #fff;
     border-radius: 50px;
     color: #1C2230;
-    margin: 2% 10%;
+    margin-top: 160px;
+    margin-inline: 10%;
     height: 80vh;
 }
 
