@@ -29,29 +29,48 @@ body{
 background-color: rgba(255, 255, 255, 0.5);
 }
 header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #1C2230;
-    /* width: 300px; */
     width: 100%;
     height: 120px;
     position: fixed;
     z-index: 1000;
     top: 0;
 }
-
-nav{
-    width: 60%;
-    background-color: #1C2230;
-    display: flex;
-    justify-content: space-around;
+#logo {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: biker2;
+  margin-right: 10%;
+  cursor: pointer;
 }
 
-nav input{
+
+nav.navbar{
+    width: 80%;
+    background-color: #1C2230;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10%;
+}
+nav .logo {
+  padding-top: 30px;
+  width: 50px;
+ 
+}
+
+nav.navbar input{
     font-family: "biker2",sans-serif;
     color: #C09256;
     background-color: #1C2230;
     border: none;
     font-size: 2.5rem;
     padding-top: 30px;
+    margin: 0 20px;
 }
 .coordonnee{
   padding-top: 1rem;
@@ -148,6 +167,18 @@ footer {
     width: 100%;
 }
 
+ion-icon {
+  font-family: 64px;
+  color: white;
+}
+
+header span{
+  display: none;
+  position: absolute;
+  right: 0;
+  font-size: 100px;
+  color: white;
+}
 
 @media screen and (max-width: 1200px) {
     .gallery-container {
@@ -161,11 +192,34 @@ footer {
     .cover h1{
         left: 5%;
     }
+
+    /*navbar */
+    header span{
+      display: flex;
+  
+    }
+    nav.navbar{
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      width: 100vw;
+      margin: 0;
+      top: 120px;
+      display: none;
+    }
+    nav.navbar.active {
+      display: flex;
+    }
+    .nav.navbar #logo {
+      position: absolute;
+      left: 0;
+    }
     
 }
 
 @media screen and (max-width: 800px) {
 nav input{
+  padding-top: 40px;
   font-size: 1.5rem;
 }
 .coordonnee{
@@ -179,7 +233,11 @@ nav input{
   
   font-size: 2.5rem;
 }
-
+nav .logo {
+  padding-top: 40px;
+  width: 30px;
+ 
+}
 }
 
 @media screen and (max-width: 600px) {
@@ -385,28 +443,8 @@ nav input{
     background-repeat: no-repeat;
     background-size: 200px;
 }
-ion-icon {
-  font-family: 64px;
-  color: white;
-}
 
 /* navbar */
 @media screen and (max-width: 600px) {
-  header span{
-    position: absolute;
-    right: 0;
-    font-size: 100px;
-    color: white;
-  }
-  .navbar{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    position: absolute;
-    top: 120px;
-    display: none;
-  }
-  .navbar.active {
-    display: flex;
-  }
+
 }

@@ -90,7 +90,6 @@ span {
 }
 
 @media screen and (max-width: 600px) {
-
     #formulaire {
         flex: 100%;
     }
@@ -100,5 +99,10 @@ span {
 
     .coordonnees {
         flex-direction: column;
+    }
+}
+@media screen and (max-width: 1255px) {
+    .bgBlue {
+        display: none;
     }
 }
