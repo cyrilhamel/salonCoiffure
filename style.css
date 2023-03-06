@@ -132,7 +132,8 @@ footer {
     margin-inline: auto;
 }
 .gallery-container:hover > .column img:not(:hover){
-    opacity: .5;   
+    filter: grayscale(1);
+    opacity: .7;
 
 }
 
