@@ -101,8 +101,12 @@ span {
         flex-direction: column;
     }
 }
-@media screen and (max-width: 1255px) {
+@media screen and (max-width: 1270px) {
     .bgBlue {
         display: none;
+    }
+
+    #formulaire {
+        margin-top: 7%;
     }
 }
