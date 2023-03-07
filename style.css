@@ -75,7 +75,9 @@ nav.navbar input {
   font-size: 2.5rem;
   margin: 0 20px;
 }
-
+.toggle-button {
+  cursor: pointer;
+}
 .coordonnee {
   padding-top: 1rem;
   text-align: center;
