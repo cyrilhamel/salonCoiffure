@@ -12,9 +12,8 @@ body {
     background-color: #fff;
     border-radius: 50px;
     color: #1C2230;
-    margin-top: 160px;
-    margin-bottom: 40px;
-    margin-inline: 10%;
+    margin: 10%;
+    /* margin-inline: 10%; */
     height: 80%;
     overflow: hidden;
     position: relative;
@@ -102,6 +101,9 @@ span {
     }
 }
 @media screen and (max-width: 1270px) {
+    .contact {
+        margin-top: 15%;
+    }
     .bgBlue {
         display: none;
     }
